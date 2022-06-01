@@ -1,0 +1,23 @@
+% !TEX encoding = UTF-8
+% !TEX program = txs:///xelatex | txs:///bibtex | txs:///xelatex | txs:///xelatex
+% !BIB program = bibtex
+% !TeX root = main.tex
+
+\documentclass[forprint]{qdubachelor}
+\begin{document}
+\frontmatter
+\include{content/cover}
+\declaration
+\include{content/abstr}
+\emptystyles
+\setcounter{page}{1}
+\tableofcontents
+
+\mainmatter
+\restorestyles
+\include{content/chap1}
+\include{content/chap2}
+\include{content/thanks}
+\reference{mainref}
+\include{content/appdx}
+\end{document}
